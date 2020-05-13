@@ -33,9 +33,9 @@ def tour(grille, joueur):
         print("Vous avez joué la case (" + colonne + ";" + ligne + ")")
 
     if joueur == 1:
-        grille[int(colonne) + int(ligne) * 3] = "X"
+        grille[int(colonne) + int(ligne) * 3] = "❌"
     if joueur == 2:
-        grille[int(colonne) + int(ligne) * 3] = "O"
+        grille[int(colonne) + int(ligne) * 3] = "0"
     afficher_grille(grille)
 
 
@@ -69,7 +69,7 @@ def est_match_nul(grille):
 
 # Intro
 joueur = 1
-print("Le joueur 1 possède les X. Le joueur 2 possède les O")
+print("Le joueur 1 possède les ❌. Le joueur 2 possède les O")
 grille = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 afficher_grille(grille)
 gagne = 0
